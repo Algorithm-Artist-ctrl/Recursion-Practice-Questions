@@ -7,7 +7,6 @@ def merge_sort(arr):
     left_sorted = merge_sort(left_half)
     right_sorted = merge_sort(right_half)
     return merge(left_sorted, right_sorted)
-
 def merge(left, right):
     result = []
     i = j = 0
@@ -20,7 +19,6 @@ def merge(left, right):
             j += 1
     result.extend(left[i:])
     result.extend(right[j:])
-
     return result
 my_list = [38, 27, 43, 3, 9, 82, 10]
 sorted_list = merge_sort(my_list)
